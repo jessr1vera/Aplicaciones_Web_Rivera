@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" herf="Estilos/styles.css">
+    <title> HTML y JavaScript Diagnostico</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Welcome to the Quiz</h1>
+        <p id="question">What is the capital of France?</p>
+        <button class="button" onclick="checkAnswer()">Submit Answer</button>
+    </div>
+
+    <script>
+        /* Pregunta: ¿Cuál es la función de 'document.getElementById' en JavaScript? */
+        function checkAnswer() {
+            /* Pregunta: ¿Qué hace 'prompt' y cómo se puede usar en lugar de 'alert'? */
+            let answer = prompt("Enter your answer:");
+
+            /* Pregunta: ¿Cuál es el propósito de la instrucción 'if' en este fragmento de código? */
+            if (answer.toLowerCase() === 'paris') {
+                alert("Correct!");
+            } else {
+                alert("Try again!");
+            }
+        }
+
+        /* Pregunta: ¿Cómo se puede manipular el DOM usando JavaScript para cambiar el contenido de un elemento? */
+        document.getElementById("question").innerText = "What is the capital of Spain?";
+    </script>
+
+</body>
+</html>
