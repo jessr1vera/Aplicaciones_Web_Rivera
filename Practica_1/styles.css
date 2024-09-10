@@ -1,0 +1,61 @@
+/* Estilos globales */
+body {
+    font-family: "C:\Users\river\Downloads\Handjet";
+    background-color: #b46d85;
+    color: #0a0505;
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #cea7be;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para los encabezados */
+h1 {
+    color: #5a2186;
+}
+
+h2 {
+    color: #114a79;
+}
+
+/* Estilo para el formulario */
+form {
+    background-color: rgb(194, 133, 151);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
