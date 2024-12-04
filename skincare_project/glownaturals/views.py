@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.generic import CreateView, UpdateView, DeleteView, DetailView, TemplateView
+from django.contrib.auth.views import LoginView
+from django.urls import reverse_lazy
 from .models import Producto
 from glownaturals.forms import ProductoForm
 
@@ -27,3 +29,7 @@ class ProductoDetailView(DetailView):
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+class CustomLoginView(LoginView):
+    template_name = 'login.html'
+    success_url = reverse_lazy('home') 
